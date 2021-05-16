@@ -1,0 +1,4 @@
+1.Internal (sử dụng nội bộ)
+- Đặt trực tiếp cặp thẻ script vào mã HTML và viết javascript giữa cặp thẻ này.
+2.External (sử dụng file .js bên ngoài)
+- File Js se được import từ ngoài vào qua cặp tag script.
