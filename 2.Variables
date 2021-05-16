@@ -67,5 +67,5 @@ World!";
 biến sẽ không hoạt động.
 để biến họat động chúng ta cần khai báo như sau :
 
- var x = "Hello \
+var x = "Hello \
 World!";
