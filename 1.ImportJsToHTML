@@ -1,4 +1,9 @@
 1.Internal (sử dụng nội bộ)
 - Đặt trực tiếp cặp thẻ script vào mã HTML và viết javascript giữa cặp thẻ này.
-2.External (sử dụng file .js bên ngoài)
+2. Inline (sử dụng trong các tag)
+- Viết trực tiếp js vào trong các tag.
+3.External (sử dụng file .js bên ngoài)
 - File Js se được import từ ngoài vào qua cặp tag script.
+4. External References
+- Nhúng từ một file JavaScript có đường dẫn bất kỳ trên Internet, cách này có tên gọi là: External References.
+- Với cách này bạn có thể upload file JS của mình lên host
