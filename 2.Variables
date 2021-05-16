@@ -1,0 +1,71 @@
+1.Biến là gì.
+- Biến như là 1 thùng chứa có tên. 
+
+2.Biến được lưu ở đâu.
+- Các biến được lưu trữ trong bộ nhớ browser process( tiến trình của trình duyệt). ( hiểu như là được lưu trong phần Ram mà trình duyệt đang sử dụng).
+
+3.Khai báo biến.
+- Để khai bao biến ta dùng từ khóa var, const, let.
+ + var: khai báo biên truy cập ở phạm vi hàm số hoặc bên ngoài hàm số. Còn được gọi là biến toàn cục.
+ + const: khai báo 1 hằng số  và giá trị của nó không thay đổi trong suốt chương trình.
+ + let: khai báo biến chỉ có thể truy cập trong 1 block bao quanh nó được xác định trong cặp dấu {}.
+*Quy tắc đặt tên
+- Tên biến có thể bao gồm chữ cái, số, dấu gạch dưới ( _ ) và kí tự đô la ( $ )
+- Tên biến không thể bắt đầu bằng số, phải bắt đầu bằng một chữ cái hoặc dấu gạch dưới hoặc dấu đô la
+- Tên biến phân biệt chữ hoa và chữ thường. Vì vậy tenbien và TenBien là 2 biến khác nhau
+- Tên biến không được (không thể) đặt trùng với các từ khóa của Javascript
+
+4. Kiểu dữ liệu của biến
+Cố 7 kiểu dữ liệu như sau:
+- Kiểu boolean
+- Kiểu null
+- Kiểu undefined
+- Kiểu số
+- Kiểu chuỗi
+- Kiểu Symbol (mới trong ECMAScript 6)
+- Kiểu đối tượng
+
+5. Phạm vi của biến
+- Có 2 loại phạm vi biến: 
+ + biến cục bộ(local scope): được khai báo bên trong một hàm và chỉ truy cập được bên trong 1 hàm. Nếu truy cập từ bên ngoài của hàm, bạn sẽ nhận được lỗi 'undefined variable' (biến không xác định).
+ + biến toàn cục(global scope): được khai báo ngoài hàm. được truy cập cả bên trong và bên ngoài hàm.
+ vd:
+  var foo = 50;  //<= biến toàn cục 
+
+  function test() {
+          var bar = 100; //<= biến cục bộ 
+  }
+
+6. Một số vấn đề hay gặp phải khi làm việc với biến.
+6.1. Sử dụng toán tử gán (=), thay vì toán tử so sánh (==) trong câu lệnh if.
+    var x = 0;
+    if (x = 10)
+    câu lệnh này sẽ trả về giá trị true vì 10 là true
+
+    var x = 0;
+    if (x = 0) 
+    câu lệnh này sẽ trả về giá trị false vì 0 là false
+
+    để so sánh chính xác chúng ta phải sử dụng như sau
+    var x = 0;
+    if (x == 10)
+6.2. Nhầm lẫn giữa việc bổ sung và thêm số
+Cả 2 phép  tính toán trên đều sử dụng toán tử cộng giống nhau.
+
+var x = 10;
+var y = 5;
+var z = x + y;           // kết quả của z là  15.
+
+var x = 10;
+var y = "5";
+var z = x + y;           // kết quả của z là "105".
+6.3. Phá vỡ chuỗi JavaScript
+- Javascript cho phép chúng ta chia chuỗi thành 2 dòng nhưng nếu khai báo như :
+
+var x = "Hello
+World!";
+biến sẽ không hoạt động.
+để biến họat động chúng ta cần khai báo như sau :
+
+var x = "Hello \
+World!";
