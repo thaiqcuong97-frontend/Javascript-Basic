@@ -1,0 +1,18 @@
+1.Kiểu dữ liệu nguyên thủy: Primitive Data
+ -number : kiểu số
+ -string : kiểu chữ
+ -boolean: kiểu true or false 
+ -undefined : rỗng (chưa có giá trị)
+ -null : không có gì (isNull), kiểm ra giữu liệu thì = object
+ -symbol : ES6 
+   * var id = symbol('id'); unique (duy nhất)
+2.dữ liệu phức tạp: Complex Data
+ -function 
+ -object : Có các cặp key: value trong dấu ngoặc nhọn
+  + Object types 
+    vd: var myObject = {
+      name: 'Cuong';
+      age: 18
+    }
+  + Array
+    vd var myArray = [1,2,3,4,5,6,7];
