@@ -1,6 +1,9 @@
 1. Các loại toán tử .
-  Toán tử số học - Arithmetic
-  Toán tử gán - Assignment
-  Toán tử so sánh - Comparision
-  Toán tử logic - Logical
-  Toán tử chuỗi - String operator
+  - Toán tử số học - Arithmetic
+  - Toán tử gán - Assignment
+  - Toán tử so sánh - Comparision
+    + == & ===
+     * == : chỉ so sánh value
+     * === :  so sánh value và data types
+  - Toán tử logic - Logical
+  - Toán tử chuỗi - String operator
