@@ -1,0 +1,38 @@
+1. Toán tử logic và cách thức hoạt động
+  - Toán tử logic là loại toán tử dùng để xác định mối quan hệ logic giữa các giá trị logic (true, false).
+  - Toán tử logic được chia làm ba loại: && || !
+    =>Toán tử && (and) sẽ trả về giá trị:
+      true: nếu hai giá trị là true
+      false: nếu hai giá trị là false, hoặc một giá trị là true và một giá trị là false
+    =>Toán tử || (or) sẽ trả về giá trị:
+      true: nếu hai giá trị là true, hoặc một giá trị là true và một giá trị là false
+      false: nếu hai giá trị là false
+    => Toán tử ! (not) sẽ trả về giá trị logic ngược lại.
+
+*Có 6 giá trị khi convert sang boolean được hiểu là fasse.
+&& và
+1. Nó lấy từ trái qua phải. Nếu trong phép toán có falthy thì trả về false
+2. Nó lấy từ trái qua phải. Nếu không có falthy thì trả về true
+|| hoặc
+Trả về false khi tất cả các vế đều thuộc falthy, ngược lại trả về true
+
+Vd: 
+Cho trước các biến a, b, c có thể là bất kì kiểu dữ liệu gì. Sử dụng toán tử logical để giải các yêu cầu sau.
+
+– Nếu biến a có giá trị truthy thì gán a cho result.
+– Nếu biến a là falsy b là truthy thì gán b cho result.
+– Nếu biến a và b là falsy thì gán c cho result.
+
+function run(a, b, c) {
+    var result = a && (result = a) ||
+                 !a && (result =b) ||
+                 !a && !b && (result = c);
+    
+    return result;
+}
+
+– Input: 1, 0, 2 - Output: 1
+– Input: false, '0', 2 - Output: '0'
+– Input: NaN, 0, 2 - Output: 2
+– Input: 0, 0, NaN - Output: NaN
+– Input: NaN, false, null - Output: null
