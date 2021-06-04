@@ -1,0 +1,60 @@
+// 1. Tạo String
+//   - Có 3 cách để tạo String: '', "", ``.
+//     + Kiểu '' và "" có hiệu quả giống nhau.
+//     + `` kiểu mới nhất gọi là template literal(ES6).
+
+// 2. Khai báo String.
+// - C1: 
+var fullName = "Thai Quoc Cuong"; // (Nên dùng).
+// - C2:
+var fullName = new String("Thai Quoc Cuong"); //  (Không nên dùng vì kiểu dững liệu trả về là object)
+
+// * Sử dụng dấu nháy đơn ('), kép ("), chéo ngược (\)  trong String.
+//   var fullName = 'Thai Quoc Cuong là \"Siêu Nhân\' \\ rat ngau';
+
+// 3. String Method
+// var myString = "Toi dang hoc Js Js"
+
+//   3.1. Length
+// console.log(myString.length);
+// ==> 15
+
+//   3.2. Find index
+
+//    *indexOf:
+//    - Kiểm tra sự xuất hiện đầu tiên của một giá trị được chỉ định trong một chuỗi.
+//    - Nếu giá trị không nằm trong chuỗi, nó sẽ trả về -1 
+//    - Ta có thể thêm một đối số thứ hai để chỉ đị vị trí bắt đầu tìm kiếm
+// VD:
+// console.log(myString.indexOf('Js'))
+// ==> 13
+// console.log(myString.indexOf('k'))
+// ==> -1
+// console.log(myString.indexOf('Js', 14))
+// ==> 16
+
+//    *lastInDexOf:
+//    - Kiểm tra sự xuất hiện đầu tiên từ cuối chuỗi trở ngược lại.
+// console.log(myString.lastIndexOf('Js'))
+// ==> 13
+// console.log(myString.lastIndexOf('k'))
+// ==> -1
+// console.log(myString.lastIndexOf('Js', 15))
+
+//     * Search
+// console.log(myString.search('Js'))
+//   3.3. Cut String
+//     * slice()
+//     - Hàm này có tác dụng cắt ra một chuỗi con từ một chuỗi cha.
+//     Cú Pháp:
+//     string.slice(begin,end);
+// console.log(myString.slice(2,5));
+//   3.4. Replace
+// console.log(myString.replace('Js', 'Javascripts'));
+//   3.5. Convert to upper case
+//   3.6. Convert to lower case
+//   3.7. Trim
+//   3.8. Split
+//   3.9. Get a character by index
+//   4.0. Biểu thức chính quy.
+// https://toidicode.com/cac-ham-xu-ly-chuoi-trong-javascript-155.html
